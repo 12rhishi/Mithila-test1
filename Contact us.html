@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | JNU Placement Cell</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        jnuBlue: '#003366',
+                        jnuLightBlue: '#005b96',
+                        jnuRed: '#990000',
+                        jnuGold: '#C5A059',
+                        lightGray: '#f8f9fa',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans antialiased text-gray-800 flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.location.href='index.html'">
+                    <div class="flex items-center gap-3">
+                        <div class="text-jnuBlue text-3xl"><i class="fas fa-university"></i></div>
+                        <div class="border-l-2 border-gray-300 pl-3">
+                            <h1 class="text-lg font-serif font-bold text-jnuBlue leading-none">JNU</h1>
+                            <p class="text-[10px] font-bold text-jnuRed tracking-widest uppercase mt-1">Placement Cell</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="index.html" class="text-gray-600 hover:text-jnuBlue font-medium text-sm uppercase">Home</a>
+                    <a href="pc-about.html" class="text-gray-600 hover:text-jnuBlue font-medium text-sm uppercase">About Us</a>
+                    <a href="#" class="text-gray-600 hover:text-jnuBlue font-medium text-sm uppercase">Academics</a>
+                    <a href="pc-gallery.html" class="text-gray-600 hover:text-jnuBlue font-medium text-sm uppercase">Gallery</a>
+                    <a href="#" class="text-gray-600 hover:text-jnuBlue font-medium text-sm uppercase">Alumni</a>
+                    <a href="contact.html" class="text-jnuBlue font-bold text-sm uppercase border-b-2 border-jnuRed">Contact Us</a>
+                </div>
+                <div class="flex items-center md:hidden">
+                    <button onclick="toggleMobileMenu()" class="text-gray-600 hover:text-jnuBlue p-2 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-xl z-40 left-0">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="index.html" class="block py-2 text-sm font-semibold text-gray-600 hover:text-jnuBlue border-b border-gray-100">Home</a>
+                <a href="pc-about.html" class="block py-2 text-sm font-semibold text-gray-600 hover:text-jnuBlue border-b border-gray-100">About Us</a>
+                <a href="#" class="block py-2 text-sm font-semibold text-gray-600 hover:text-jnuBlue border-b border-gray-100">Academics</a>
+                <a href="pc-gallery.html" class="block py-2 text-sm font-semibold text-gray-600 hover:text-jnuBlue border-b border-gray-100">Gallery</a>
+                <a href="#" class="block py-2 text-sm font-semibold text-gray-600 hover:text-jnuBlue border-b border-gray-100">Alumni</a>
+                <a href="contact.html" class="block py-2 text-sm font-bold text-jnuBlue">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        
+        <!-- Header -->
+        <div class="bg-white border-b border-gray-200 pt-16 pb-10">
+            <div class="max-w-7xl mx-auto px-4 text-center">
+                <h2 class="text-jnuRed font-bold tracking-widest uppercase text-xs mb-3">Get in Touch</h2>
+                <h1 class="text-4xl md:text-5xl font-serif font-bold text-jnuBlue mb-6">Contact Us</h1>
+                <p class="text-gray-500 max-w-2xl mx-auto text-lg font-light leading-relaxed">
+                    Have questions about recruitment, internships, or partnerships? Reach out to the JNU Placement Cell team. We are here to assist students and recruiters alike.
+                </p>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    
+                    <!-- Left Column: Contact Information -->
+                    <div class="space-y-8">
+                        
+                        <div class="mb-8">
+                            <h3 class="text-2xl font-serif font-bold text-jnuBlue mb-6 border-l-4 border-jnuGold pl-4">Contact Information</h3>
+                            <p class="text-gray-600 mb-6">Reach out to us directly for official queries.</p>
+                        </div>
+
+                        <!-- General Contact Details Card -->
+                        <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-8 hover:shadow-md transition-shadow">
+                            <div class="space-y-6">
+                                <!-- Email -->
+                                <div class="flex items-center gap-5">
+                                    <div class="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-jnuBlue flex-shrink-0">
+                                        <i class="fas fa-envelope text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs font-bold text-gray-500 uppercase tracking-wide mb-1">Email Us</p>
+                                        <a href="mailto:placement@jnu.ac.in" class="text-lg font-bold text-jnuBlue hover:text-jnuRed transition-colors">placement@jnu.ac.in</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="w-full border-t border-gray-100"></div>
+
+                                <!-- Phone -->
+                                <div class="flex items-center gap-5">
+                                    <div class="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-jnuBlue flex-shrink-0">
+                                        <i class="fas fa-phone-alt text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs font-bold text-gray-500 uppercase tracking-wide mb-1">Call Us</p>
+                                        <a href="tel:011-26704046" class="text-lg font-bold text-jnuBlue hover:text-jnuRed transition-colors">011-26704046</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Address Card -->
+                        <div class="bg-jnuBlue rounded-xl shadow-sm p-8 text-white relative overflow-hidden">
+                            <div class="relative z-10">
+                                <h4 class="text-xl font-bold mb-4 flex items-center gap-2">
+                                    <i class="fas fa-map-marker-alt text-jnuGold"></i> Visit Us
+                                </h4>
+                                <p class="font-light opacity-90 leading-relaxed mb-4">
+                                    Placement Cell Office,<br>
+                                    Jawaharlal Nehru University,<br>
+                                    New Mehrauli Road,<br>
+                                    New Delhi - 110067
+                                </p>
+                                <div class="pt-4 border-t border-blue-800">
+                                    <p class="text-sm opacity-75">Office Hours: Mon - Fri, 9:00 AM - 5:30 PM</p>
+                                </div>
+                            </div>
+                            <!-- Background Decoration -->
+                            <div class="absolute right-0 bottom-0 text-white opacity-5 text-9xl -mr-8 -mb-8">
+                                <i class="fas fa-university"></i>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Right Column: Contact Form -->
+                    <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 lg:p-10">
+                        <h3 class="text-2xl font-serif font-bold text-jnuBlue mb-2">Send us a Message</h3>
+                        <p class="text-gray-500 text-sm mb-8">Fill out the form below and we'll get back to you as soon as possible.</p>
+                        
+                        <!-- Updated Form Action to use FormSubmit.co service -->
+                        <form action="https://formsubmit.co/rhishikalp03@gmail.com" method="POST" class="space-y-5">
+                            <!-- FormSubmit Configuration: Turn off Captcha (optional) and set Template -->
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_subject" value="New Contact Form Submission - JNU Placement Cell">
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-xs font-bold text-gray-600 uppercase tracking-wide mb-2">First Name</label>
+                                    <input type="text" name="First Name" required class="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-jnuBlue focus:ring-1 focus:ring-jnuBlue transition-all" placeholder="John">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-gray-600 uppercase tracking-wide mb-2">Last Name</label>
+                                    <input type="text" name="Last Name" required class="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-jnuBlue focus:ring-1 focus:ring-jnuBlue transition-all" placeholder="Doe">
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-xs font-bold text-gray-600 uppercase tracking-wide mb-2">Email Address</label>
+                                <input type="email" name="Email" required class="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-jnuBlue focus:ring-1 focus:ring-jnuBlue transition-all" placeholder="john@example.com">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-gray-600 uppercase tracking-wide mb-2">Subject</label>
+                                <select name="Subject" class="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-jnuBlue focus:ring-1 focus:ring-jnuBlue transition-all text-gray-600">
+                                    <option>General Inquiry</option>
+                                    <option>Recruitment/Placement</option>
+                                    <option>Student Query</option>
+                                    <option>Partnership</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-gray-600 uppercase tracking-wide mb-2">Message</label>
+                                <textarea name="Message" rows="5" required class="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-jnuBlue focus:ring-1 focus:ring-jnuBlue transition-all" placeholder="How can we help you?"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-jnuBlue text-white font-bold py-4 rounded-lg hover:bg-jnuRed transition-colors duration-300 shadow-lg shadow-blue-900/20">
+                                Send Message <i class="fas fa-paper-plane ml-2"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="h-96 w-full bg-gray-200 relative">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.665792473859!2d77.16486031508076!3d28.53551608245617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1d9c22359489%3A0x6a2c27731777b789!2sJawaharlal%20Nehru%20University!5e0!3m2!1sen!2sin!4v1683884848484!5m2!1sen!2sin" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                class="absolute inset-0 grayscale hover:grayscale-0 transition-all duration-500"
+            ></iframe>
+            <div class="absolute inset-0 bg-jnuBlue/10 pointer-events-none"></div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-10 pb-5">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <div class="flex justify-center items-center gap-4 mb-6 text-jnuGold text-xl">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+            <p class="text-sm text-gray-400">© 2024 Jawaharlal Nehru University Placement Cell. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
